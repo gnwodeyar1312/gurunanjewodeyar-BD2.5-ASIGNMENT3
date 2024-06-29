@@ -207,6 +207,10 @@ let hotels = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to TripWithUs Hotel Chain");
+});
+
 //Endpoint 1: Get the hotels sorted by pricing
 app.get("/hotels/sort/pricing", (req, res) => {
   let { pricing } = req.query;
